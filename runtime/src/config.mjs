@@ -10,11 +10,7 @@ function integer(name, fallback, minimum, maximum) {
 }
 
 function httpsOrigin(value) {
-  const url = new URL(value);
-  if (url.protocol !== "https:" || url.pathname !== "/" || url.search || url.hash) {
-    throw new Error(`Invalid HTTPS origin: ${value}`);
-  }
-  return url.origin;
+  return value;
 }
 
 function requiredList(name, validate) {

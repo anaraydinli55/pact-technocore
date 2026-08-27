@@ -1,26 +1,20 @@
+# Gizli Anahtarlar ve Ayarlar
+.env
+*.pem
+identity.json
+identity.pem
+auth.md
+
+# Veritabanı ve Yerel Veriler
+data/
+runtime/data/
+
+# Paket Yönetimi
 node_modules/
 dist/
-coverage/
-
-.env
-.env.*
-!.env.example
-
-data/
-backups/
-*.sqlite
-*.sqlite-shm
-*.sqlite-wal
-*.db
-
-*.pem
-*.key
-*.jwk
-*wallet*.json
-*vault*.json
-*secret*
-
-*.log
 .DS_Store
-.idea/
-.vscode/
+
+# Python (Eğer varsa)
+venv/
+__pycache__/
+*.py[cod]
